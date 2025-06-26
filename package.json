@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "routecheck": "react-router typegen && tsc",
+    "codecheck": "biome check ./app --write"
   },
   "dependencies": {
     "@heroui/react": "2.8.0-beta.10",
@@ -20,6 +22,7 @@
     "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.0.5",
     "@eslint/js": "^9.29.0",
     "@react-router/dev": "^7.6.2",
     "@tailwindcss/vite": "^4.1.10",

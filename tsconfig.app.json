@@ -8,7 +8,8 @@
     "skipLibCheck": true,
     "rootDirs": [".", "./.react-router/types"],
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "@assets/*": ["./app/assets/*"],
     },
 
     /* Bundler mode */

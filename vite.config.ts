@@ -6,5 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), reactRouter(), tailwindcss(), tsconfigPaths()],
+  plugins: [react({
+    include: "./app/**/*.tsx"
+  }), reactRouter(), tailwindcss(), tsconfigPaths()],
+  server: {
+    watch: {
+      usePolling: true
+    }
+  }
 })
